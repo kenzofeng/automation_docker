@@ -1,0 +1,5 @@
+FROM kenzo/baymax_node
+
+RUN rm -rf /usr/local/tmp/*
+COPY Doraemon-1.1.9-py2-none-any.whl  /usr/local/tmp/
+RUN pip install /usr/local/tmp/Doraemon-1.1.9-py2-none-any.whl
